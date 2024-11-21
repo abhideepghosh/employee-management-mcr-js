@@ -1,26 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Employee Management System</title>
+      <meta charset="UTF-8"/>
+      <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="./style.css"/>
+      <title>Employee Management System</title>
   </head>
   <body>
-    <div id="app" class="main-section">
-      <div id="emp-list" class="emp-list">
-        <ol id="list-view"></ol>
-      </div>
-      <div id="emp-details" class="emp-details">
-        <div class="emp-image rows">
-          <img alt="Employee Image" class="emp-image" src="./assets/default_profile.jpeg">
+    <div id="container">
+        <button id="add-employee-btn">Add Employee</button>
+        <div id="app" class="main-section">
+            <div class="add-employee-section">
+            </div>
+            <div id="emp-list" class="emp-list">
+                <ol id="list-view"></ol>
+            </div>
+            <div id="emp-details" class="emp-details">
+                <div class="emp-image rows">
+                    <img alt="Employee Image" class="emp-image" src="./assets/default_profile.jpeg">
+                </div>
+                <div class="rows">
+                    <h2>No Employee Selected</h2>
+                </div>
+            </div>
         </div>
-        <div class="rows">
-          <h2>No Employee Selected</h2>
-        </div>
-      </div>
     </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
